@@ -9,43 +9,59 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>MateandoAndo</title>
 </head> 
 <body>
+
+
     <header>
         <div class="logo_titulo animate__fadeIn">
-            <img class= "mate-logo"src="../img/matelogo.png" alt="matelogo">
+            <img class="mate-logo"src="../img/matelogo.png" alt="matelogo">
             <div class="Logo"><a href="../index.html">MateandoAndo</a></div>
         </div>
-
-        <nav class="barra animate__fadeIn">
-            <ul>
-                <li class="link"><a href="../pages/comopreprarlo.html"> <button>Como preprarlo</button></a></li>
-                <li class="link"><a href="../pages/beneficios.html"><button>Beneficios</button></a></li>
-                <li class="link"><a href="../pages/tiposdeyerba.html"><button>Tipos de yerba</button></a></li>
-                <li class="link"><a href="../pages/contacto.html"><button>Contacto</button></a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark animate__fadeIn" >
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/comopreprarlo.html">Como Prepararlo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../pages/beneficios.html">Beneficios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/tiposdeyerba.html">Tipos de yerba</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"href="../pages/contacto.html" >Contacto</a>
+                    </li>
+            </div>
+            </div>
         </nav>
     </header>
 
     <main class="como-preparlo animate__fadeIn">
-        <h2 class="titulo2">Como preparar el mate</h2>
+        <h2 class="titulo-como-preparlo">Como preparar el mate</h2>
         <section class="section-como-preparlo"> 
             <div class="section-como-prepararlo-img ">
                 <img class="foto" src="../img/Mate.jpg" alt="asi_te_queda_el_mate"> 
             </div> 
             <div class="listaPreparar">
                 <ol class="section-como-prepararlo-ol">
-                    <li>Poner yerba en el Mate</li> <br>
-                    <li>Calentar el agua ente 75°C y 85°C</li> <br>
-                    <li>Agitar el mate</li> <br>
-                    <li>Inclinalo al mate</li> <br>
-                    <li>Ponerle agua en el hueco que queda</li> <br>
-                    <li>Dejarlo reposar por 2 min</li> <br>
-                    <li>Colocarle la bombilla en el hueco</li> <br>
-                    <li>Y a disfrutar!</li> 
+                    <li class="lista-como-preparlo">Poner yerba en el Mate</li> 
+                    <li class="lista-como-preparlo">Calentar el agua a 80°C</li> 
+                    <li class="lista-como-preparlo">Agitar el mate</li> 
+                    <li class="lista-como-preparlo">Inclinalo al mate</li> 
+                    <li class="lista-como-preparlo">Ponerle agua en el hueco que queda</li> 
+                    <li class="lista-como-preparlo">Dejarlo reposar por 2 min</li> 
+                    <li class="lista-como-preparlo">Colocarle la bombilla en el hueco</li> 
+                    <li class="lista-como-preparlo">Y a disfrutar!</li> 
                 </ol>
             </div>
             <div class="section-como-prepararlo-img">
@@ -59,13 +75,15 @@
     </main>
 
     <footer class="footer">
-        <p class="p">TODOS LOS DERECHOS ESTAN RESERAVADOS ©</p>
+        <p class="p">Diseñado por Tomas Lelli</p>
         <div class="redes">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-twitter"></i>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </body>
 </html>
