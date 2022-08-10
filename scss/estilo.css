@@ -1,0 +1,16 @@
+.videos {
+  box-shadow: 10px 10px 48px -3px rgba(0, 0, 0, 0.75);
+}
+
+.texto-beneficios {
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+}
+
+.titulo-beneficios {
+  font-size: 40px;
+  color: black;
+  text-align: center;
+}
+
+/*# sourceMappingURL=estilo.css.map */

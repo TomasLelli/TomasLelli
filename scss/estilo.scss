@@ -1,0 +1,30 @@
+// varibales
+
+$sombra:10px 10px 48px -3px rgb(0 0 0 / 75%);
+$letra: 'Montserrat', sans-serif;
+$tamaño-letra-desktop:17px;
+$tamaño-titulos:40px;
+$texto-centrado:center;
+$color-letra: black;
+
+.videos{
+    box-shadow: $sombra;
+}
+
+.texto-beneficios{
+    font-family: $letra;
+    font-size: $tamaño-letra-desktop;
+}
+
+.titulo-beneficios{
+    font-size: $tamaño-titulos;
+    color: black;
+    text-align: $texto-centrado;
+}
+
+
+
+
+
+
+
