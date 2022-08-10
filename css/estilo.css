@@ -79,14 +79,17 @@ header{
     padding: 20px 5%;
     background-color: rgb(117, 115, 115);
 }
+
 .logo_titulo{
     display: flex;
     justify-content: center;
 }
+
 .mate-logo{
     width:40px;
     margin-right: 10px;
 }
+
 .Logo a {
     font-size:25px;
     font-family: 'Quicksand', sans-serif;
@@ -94,7 +97,6 @@ header{
     list-style: none;
     color: white;
 }
-
 
 .navbar-dark .navbar-nav .nav-link {
     font-family: 'Roboto Condensed', sans-serif;
@@ -274,10 +276,6 @@ align-items: center;
     align-items: center;
     width: 100%;
     padding: 40px;
-}
-
-.textomate2{
-    font-size: 20px;
 }
 
 .submate2{
