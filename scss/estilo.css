@@ -1,16 +1,730 @@
-.videos {
+.section-como-preparlo, .como-preparlo, .mateando2, .section-img2, .section-texto2, .texto2, .mateando, .tipos-de-mates, .section-texto, .main-index, .footer, .logo-index, .logo_titulo, .main {
+  display: flex;
+  align-items: center;
+}
+
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+}
+
+/* animaciones */
+@keyframes blur-in {
+  0% {
+    filter: blur(50px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+.blur-in {
+  animation: blur-in 1.5s linear;
+}
+
+.animate__fadeIn {
+  display: inline-block;
+  animation: fadeIn;
+  animation-duration: 1.5s;
+}
+
+a {
+  color: rgb(2, 2, 1);
+}
+a:hover {
+  color: rgb(211, 211, 220);
+  transition: 1s;
+}
+
+.animate__fadeInLeft {
+  display: inline-block;
+  margin: 0 0.5rem;
+  animation: fadeInLeft;
+  animation-duration: 2s;
+}
+
+.animate__fadeInRight {
+  display: inline-block;
+  margin: 0 0.5rem;
+  animation: fadeInRight;
+  animation-duration: 3s;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: rgb(202, 202, 202);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  height: 100%;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.color {
+  color: white;
+}
+
+header {
+  padding: 17px 5%;
+  background-color: rgb(56, 56, 56);
+}
+
+.mate-logo {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.Logo a {
+  font-size: 30px;
+  color: white;
+  font-family: "Quicksand";
+  text-decoration: none;
+  list-style: none;
+}
+
+.barra {
+  display: none;
+}
+
+.logo-nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.navegation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.navegation ul li {
+  display: inline-block;
+}
+.navegation ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.4s linear;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  font-family: "Roboto Condensed" sans-serif;
+}
+.navegation ul li a:hover {
+  background: rgb(180, 180, 180);
+  border-radius: 10px;
+  color: black;
+}
+
+.logo {
+  letter-spacing: 15px;
+  font-size: 1.3em;
+}
+
+/* el footer en todas los archivos */
+.footer {
+  flex-direction: column;
+  background-color: rgb(56, 56, 56);
+  padding: 12px;
+  width: 100%;
+  margin-top: auto;
+}
+
+.p {
+  margin: 5px 0;
+  font-size: 22px;
+  color: rgb(189, 189, 189);
+  font-family: "Montserrat";
+}
+
+.redes i {
+  font-size: 22px;
+  margin: 0 7px;
+}
+
+/* Video */
+.video1 {
+  display: block;
+  position: fixed;
+  opacity: 0.8;
+  z-index: -1;
+  min-height: 100%;
+  min-width: 100%;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+}
+
+/* index MateandoAndo */
+.texto-main-index {
+  margin-top: 250px;
+  margin-right: 530px;
+}
+
+.main-index {
+  justify-content: space-around;
+  text-align: center;
+}
+
+.titulo-index {
+  font-size: calc(1.375rem + 1.5vw);
+  color: azure;
+  font-family: "Montserrat";
+  margin: -3px 0;
+}
+
+.p-index {
+  font-size: 30px;
+  color: white;
+  font-family: "Albert Sans";
+}
+
+.boton {
+  border-radius: 10px;
+  margin: 2px 0px;
+}
+
+/* Mates */
+.section-texto {
+  font-family: "Montserrat";
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+.gallery-conteiner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 150px;
+  grid-gap: 10px;
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.gallery__item1 {
+  grid-column-start: span 2;
+}
+
+.gallery__item2 {
+  grid-row-start: span 3;
+}
+
+.gallery__item3 {
+  grid-row-start: span 3;
+}
+
+.gallery__item5 {
+  grid-row-start: span 2;
+}
+
+.sub-mate {
+  font-size: 40px;
+  color: black;
+  font-family: "Quicksand";
+  margin: 10px 0;
+}
+
+.tipos-de-mates {
+  font-size: 30px;
+  color: rgb(189, 189, 189);
+  font-family: "Quicksand";
+  margin: 10px 0;
+  height: 100%;
+  margin-top: 20px;
+  border: 5px;
+}
+
+.section-prueba {
+  width: 50%;
+  padding: 10px;
+}
+
+.mateando {
+  flex-direction: column;
+  margin-left: 228px;
+}
+
+/* Yerba */
+.texto2 {
+  flex-direction: row;
+  color: black;
+  font-size: 25px;
+  padding-top: 100px;
+}
+
+.section-texto2 {
+  font-family: "Montserrat";
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 100%;
+  padding: 40px;
+}
+
+.submate2 {
+  font-size: 40px;
+  color: black;
+  font-family: "Quicksand";
+  margin: 10px 0;
+}
+
+.section-img2 {
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  margin-top: 20px;
+  border: 5px;
+}
+
+.mateando2 {
+  flex-direction: column;
+}
+
+/* Como preparlo */
+.como-preparlo {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.lista-como-preparlo {
+  padding: 0.7rem;
+}
+
+.section-como-preparlo {
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.section-como-prepararlo-ol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 20px;
+  color: black;
+}
+
+.titulo-como-preparlo {
+  display: flex;
+  justify-content: center;
+  font-size: 38px;
+  color: black;
+  font-family: "Quicksand";
+  padding: 20px 0;
+}
+
+.listaPreparar {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  color: black;
+  font-family: "Albert Sans";
+}
+
+.foto {
+  width: 350px;
+  border: 5px solid rgb(158, 154, 154);
+  border-radius: 10px;
+}
+
+/* contacto */
+.global-conteiner {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  font-size: 1.7rem;
+  color: black;
+}
+
+.bloque {
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+
+.form-grop {
+  font-size: 20px;
+  margin: 10px;
+}
+
+form {
+  padding-top: 10px;
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+.datos-form {
+  width: 665px;
+  height: 490px;
+  margin: 100px;
+  background-color: rgb(255, 254, 254) !important;
+  border-radius: 50px !important;
   box-shadow: 10px 10px 48px -3px rgba(0, 0, 0, 0.75);
 }
 
-.texto-beneficios {
-  font-family: "Montserrat", sans-serif;
-  font-size: 17px;
+.titulo-contacto {
+  font-size: 50px;
+  color: black;
+  font-family: "Montserrat";
+  margin-top: 50px;
 }
 
-.titulo-beneficios {
-  font-size: 40px;
-  color: black;
+input[type=nombre] {
+  font-family: "Montserrat";
+  background-color: rgb(195, 192, 192);
+  border: 2px solid white;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+input[type=apellido] {
+  font-family: "Montserrat";
+  background-color: rgb(195, 192, 192);
+  border: 2px solid white;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.botones {
   text-align: center;
+  font-family: "Montserrat";
+}
+
+textarea {
+  width: 100%;
+  font-family: "Montserrat";
+  background-color: rgb(195, 192, 192);
+  border: 2px solid white;
+  background-color: rgb(189, 186, 186) !important;
+  border-radius: 10px !important;
+  margin-bottom: 25px;
+  padding-left: 10px;
+}
+
+/* MeidasQ */
+@media screen and (max-width: 1362px) {
+  .texto-main-index {
+    margin-top: 250px;
+    margin-right: 400px;
+  }
+  .barra {
+    display: block;
+    cursor: pointer;
+    font-size: 25px;
+    color: whitesmoke;
+    font-family: "Montserrat";
+  }
+  .navegation {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .navegation ul {
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .navegation ul li {
+    display: block;
+  }
+  .navegation ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+  }
+  .navegation ul li a:hover {
+    background: rgb(96, 96, 96);
+    border-radius: 5px;
+  }
+  .navegation ul.show {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .section-texto2 {
+    flex-direction: column;
+    text-align: center;
+  }
+  .foto {
+    display: none;
+  }
+  .foto1 {
+    display: flex;
+    margin: 20px 0px;
+  }
+  .section-como-preparlo {
+    flex-direction: column;
+  }
+  .titulo-como-preparlo {
+    font-size: 35px;
+  }
+  .listaPreparar {
+    font-size: 20px;
+    padding: 0px 35px;
+  }
+  .p {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 976px) {
+  .texto-main-index {
+    margin-top: 250px;
+    margin-right: 100px;
+  }
+  header {
+    flex-direction: row;
+    padding: 20px 5%;
+  }
+  .barra ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 5px;
+  }
+  .section-texto {
+    flex-direction: column;
+  }
+  .section-texto2 {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .textomate2 {
+    padding: 0px 20px;
+    text-align: center;
+  }
+  .section-prueba {
+    width: 100%;
+  }
+  .datos-form {
+    width: 500px;
+    height: 500px;
+    margin: 100px;
+    background-color: rgb(255, 254, 254) !important;
+    border-radius: 50px !important;
+    box-shadow: 10px 10px 48px -3px rgba(0, 0, 0, 0.75);
+  }
+}
+@media only screen and (max-width: 647px) {
+  .texto-main-index {
+    margin-top: 130px;
+    margin-right: 0px;
+  }
+  .video {
+    width: 500px;
+  }
+  .gallery-conteiner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .titulo4 {
+    font-size: 35px;
+  }
+  .datos-form {
+    width: 457px;
+    height: 473px;
+    margin: 100px;
+    background-color: rgb(255, 254, 254) !important;
+    border-radius: 50px !important;
+    box-shadow: 10px 10px 48px -3px rgba(0, 0, 0, 0.75);
+  }
+  .titulo-contacto {
+    font-family: "Montserrat";
+    font-size: 40px;
+    margin-top: 50px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .video {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  header {
+    flex-direction: row;
+    padding: 20px 5%;
+  }
+  .link button {
+    padding: 5px 5px;
+  }
+  .texto-mate {
+    font-size: 15px;
+  }
+  .Logo a {
+    font-size: 25px;
+    color: white;
+    font-family: "Quicksand";
+    text-decoration: none;
+    list-style: none;
+  }
+  .mateando {
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 0%;
+    padding: 0px 15px;
+    text-align: center;
+  }
+  .texto-main-index h1 {
+    font-size: 25px;
+  }
+  .texto-main-index h2 {
+    font-size: 25px;
+    color: black;
+    font-family: "Montserrat";
+  }
+  .main-index {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0px 14px;
+  }
+  .section-prueba {
+    width: 100%;
+  }
+  .section-texto {
+    flex-direction: column;
+  }
+  .p {
+    font-size: 20px;
+  }
+  .listaPreparar {
+    font-size: 20px;
+    padding: 0px 35px;
+  }
+  .section-texto2 {
+    flex-direction: column;
+  }
+  .textomate2 {
+    padding: 0px 20px;
+    text-align: center;
+  }
+  .contenedor {
+    font-size: 15px;
+  }
+  .titulo4 {
+    font-size: 20px;
+  }
+  .datos-form {
+    width: 380px;
+    height: 450px;
+    margin: 20px;
+    background-color: rgb(255, 254, 254) !important;
+    border-radius: 50px !important;
+    box-shadow: 10px 10px 48px -3px rgba(0, 0, 0, 0.75);
+  }
+  .titulo-contacto {
+    font-size: 20px;
+    color: black;
+    font-family: "Montserrat";
+    margin-top: 40px;
+  }
+  .titulo-como-preparlo {
+    font-size: 35px;
+  }
+  .section-como-prepararlo-ol {
+    font-size: 18px;
+    color: black;
+    font-family: "Montserrat";
+    padding: 0%;
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 412px) {
+  .titulo-como-preparlo {
+    font-size: 35px;
+  }
+  .section-como-prepararlo-ol {
+    font-size: 15px;
+    color: black;
+    font-family: "Montserrat";
+    padding: 0%;
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .texto-main-index {
+    margin-top: 100px;
+    margin-right: 0px;
+  }
+  .texto-main-index h1 {
+    font-size: 23px;
+  }
+  .texto-main-index h2 {
+    font-size: 17px;
+    color: black;
+    font-family: "Montserrat";
+  }
+  .video {
+    width: 300px;
+  }
+  .textomate2 {
+    font-size: 15px;
+  }
+  .datos-form {
+    width: 305px;
+    height: 440px;
+    margin: 20px;
+    background-color: rgb(255, 254, 254) !important;
+    border-radius: 50px !important;
+    box-shadow: 10px 10px 48px -3px rgba(0, 0, 0, 0.75);
+  }
+  .titulo-contacto {
+    font-size: 20px;
+    color: black;
+    font-family: "Montserrat";
+    margin-top: 20px;
+  }
+  .p {
+    font-size: 17px;
+  }
+  .titulo-como-preparlo {
+    font-size: 27px;
+  }
+  .section-como-prepararlo-ol {
+    font-size: 15px;
+    color: black;
+    font-family: "Montserrat";
+    padding: 0%;
+    margin: 0;
+  }
+  .foto {
+    width: 75%;
+    margin: 50px 40px;
+  }
+  .logo_titulo {
+    font-size: 10px;
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 364px) {
+  .texto-main-index {
+    margin-top: 100px;
+    margin-right: 0px;
+  }
+  .texto-main-index h1 {
+    font-size: 19px;
+  }
+  .texto-main-index h2 {
+    font-size: 17px;
+    color: black;
+    font-family: "Montserrat";
+  }
 }
 
 /*# sourceMappingURL=estilo.css.map */
