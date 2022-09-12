@@ -1,4 +1,4 @@
-.como-preparlo, .mateando2, .section-img2, .section-texto2, .texto2, .mateando, .tipos-de-mates, .section-texto, .main-index, .footer, .logo-index, .logo_titulo, .main {
+.mateando2, .section-img2, .section-texto2, .texto2, .mateando, .tipos-de-mates, .section-texto, .main-index, .footer, .logo-index, .logo_titulo, .main {
   display: flex;
   align-items: center;
 }
@@ -547,6 +547,9 @@ textarea {
   .subtexto-como-prepararlo {
     font-size: 15px;
     margin: 0 80px;
+  }
+  .slide {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 647px) {
