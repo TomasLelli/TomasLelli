@@ -303,6 +303,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .titulo-como-preparlo {
@@ -547,6 +548,12 @@ textarea {
   .subtexto-como-prepararlo {
     font-size: 15px;
     margin: 0 80px;
+  }
+  .como-preparlo {
+    align-items: center;
+  }
+  .slide {
+    width: 100vw;
   }
 }
 @media only screen and (max-width: 647px) {
