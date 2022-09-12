@@ -6,6 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
+
 *{
     margin: 0px;
     box-sizing: border-box;
@@ -348,53 +349,70 @@ header{
 
 /* Como preparlo */
 
-.como-preparlo{
+.como-preparlo {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.lista-como-preparlo{
-    padding: 0.7rem;
-}
-.section-como-preparlo{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
     width: 100%;
+    height: 80%;
+}
+.titulo-como-preparlo {
+    font-size: 50px;
+    color: black;
+    font-family: "Quicksand";
+    padding: 20px 0;
 }
 
-.section-como-prepararlo-ol{
+.slide {
+    width: 80vw;
+    box-shadow: 10px 10px 48px -3px rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+}
 
+.caja-carousel{
+    border-radius: 20px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 30px;
+    width: 30px;
+    outline: rgb(238, 237, 237);
+    background-color: rgba(116, 116, 116, 0.3);
+    border-radius: 20%;
+    border: 0.6;
+}
+
+.texto-comoprepararlo{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 20px;
-    color: black;
-}
-.titulo-como-preparlo{
-    display: flex;
-    justify-content: center;
-    color:black;
-    font-family: 'Quicksand', sans-serif;
-    padding: 20px 0;
-    font-size: 38px;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(92, 92, 92, 0.6);
+    opacity: -2;
+    transition: 2s;
 }
 
-.listaPreparar{
-    display: flex;
-    justify-content: center;
-    color:black;
-    font-family: 'Albert Sans', sans-serif;
-    font-size: 25px;
+.subtitulos-como-prepararlo{
+    color: rgb(0, 0, 0);
+    font-size: 70px;
+    padding-bottom: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.subtexto-como-prepararlo{
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 150px;
+    font-family: "Montserrat";
 }
 
-.foto{
-    width: 350px;
-    border: 5px solid rgb(158, 154, 154);
-    border-radius: 10px
+.texto-comoprepararlo:hover{
+    opacity: 1;
+    visibility: visible;
+    transition: 2s;
 }
 
 
@@ -515,27 +533,25 @@ textarea{
     text-align: center;
 }
 
-.foto{
-    display: none;
-}
-
-.foto1{
-    display: flex;
-    margin: 20px 0px;
-}
-
-.section-como-preparlo{
-    flex-direction: column;
-}
-.titulo-como-preparlo{
+.titulo-como-preparlo {
     font-size: 35px;
 }
-.listaPreparar{
-    font-size: 20px;
-    padding: 0px 35px;
-}
-.p{
+
+.p {
     font-size: 22px;
+}
+
+.subtitulos-como-prepararlo{
+    font-size: 20px;
+}
+
+.subtexto-como-prepararlo{
+    font-size: 20px;
+    margin: 0 100px;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 10px;
+    width: 10px;
 }
 }
 
@@ -581,6 +597,14 @@ header{
     border-radius: 50px !important;
     box-shadow: 10px 10px 48px -3px rgb(0 0 0 / 75%);
 }
+.subtitulos-como-prepararlo {
+    font-size: 15px;
+    padding: 0;
+}
+.subtexto-como-prepararlo{
+    font-size: 15px;
+    margin: 0 80px;
+}
 
 }
 
@@ -615,6 +639,14 @@ header{
     font-size: 40px;
     margin-top: 50px;
 }
+.subtitulos-como-prepararlo b{
+    font-size: 17px;
+    padding: 0;
+}
+.subtexto-como-prepararlo{
+    font-size: 10px;
+    margin: 0 70px;
+}
 
 
 }
@@ -623,7 +655,18 @@ header{
     .video{
     width: 400px;
 }
+.titulo-como-preparlo {
+    font-size: 35px;
+}
 
+.subtitulos-como-prepararlo b{
+    font-size: 17px;
+    padding: 0;
+}
+.subtexto-como-prepararlo{
+    font-size: 10px;
+    margin: 0 50px;
+}
 
 }
 
@@ -686,11 +729,6 @@ header{
     font-size: 20px;
 }
 
-.listaPreparar{
-    font-size: 20px;
-    padding: 0px 35px;
-}
-
 .section-texto2{
     flex-direction: column;
 }
@@ -720,27 +758,32 @@ header{
     font-size: 20px;
     margin-top: 40px;
 }
-.titulo-como-preparlo{
+.titulo-como-preparlo {
     font-size: 35px;
 }
-.section-como-prepararlo-ol{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    padding: 0%;
-    margin: 0;
+
+.subtitulos-como-prepararlo b{
+    font-size: 13px;
+    padding: 0;
+}
+.subtexto-como-prepararlo{
+    font-size: 8px;
+    margin: 0 40px;
 }
 
 }
 @media only screen and (max-width: 412px){
-    .titulo-como-preparlo{
-        font-size: 35px;
-    }
-    .section-como-prepararlo-ol{
-        font-family: 'Montserrat', sans-serif;
-        font-size: 15px;
-        padding: 0%;
-        margin: 0;
-    }
+.titulo-como-preparlo {
+    font-size: 35px;
+}
+.subtitulos-como-prepararlo b{
+    font-size: 11px;
+    padding: 0;
+}
+.subtexto-como-prepararlo{
+    font-size: 8px;
+    margin: 0 40px;
+}
 }
 
 @media only screen and (max-width: 400px){
@@ -771,21 +814,18 @@ header{
 .p{
     font-size: 17px;
 }
-
-.titulo-como-preparlo{
+.titulo-como-preparlo {
     font-size: 27px;
 }
-.section-como-prepararlo-ol{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
-    padding: 0%;
-    margin: 0;
+.subtitulos-como-prepararlo b{
+    font-size: 10px;
+    padding: 0;
 }
-.foto{
-    width: 75%;
-    margin:50px 40px;
-    
+.subtexto-como-prepararlo{
+    font-size: 6px;
+    margin: 0 40px;
 }
+
 .logo_titulo{
     font-size: 10px;
 }
